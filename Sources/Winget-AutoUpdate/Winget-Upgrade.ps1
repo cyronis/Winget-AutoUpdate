@@ -161,7 +161,7 @@ if (Test-Network) {
                 if ((Compare-SemVer -Version1 $WAUCurrentVersion -Version2 $WAUAvailableVersion) -lt 0) {
                     #If new version is available, update it
                     Write-ToLog "WAU Available version: $WAUAvailableVersion" "DarkYellow"
-                    Update-WAU
+                    #Update-WAU
                 }
                 else {
                     Write-ToLog "WAU is up to date." "Green"
